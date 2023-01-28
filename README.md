@@ -4,7 +4,9 @@
 
 # Sobre o projeto
 
-**Todo list** e um projeto pessoal,para testa meus conhecimentos em programação web.
+Feito pelo celular, Talvez a responsividade possa precisar de ajustes.
+
+**Todo list** e um projeto pessoal, para testa meus conhecimentos em programação web.
 
 # Tecnologias utilizadas
 - HTML / CSS / JS
