@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Todo List</title>
+
+        <link rel="stylesheet" href="css/style.css" />
+
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="js/app.js" defer></script>
+    </head>
+    <body>
+        <div id="todoList">
+            <div id="inputText">
+                <textarea id="text" type="text"></textarea>
+                <button id="add" onclick="addToList()">ADD</button>
+            </div>
+
+            <div id="lists"></div>
+        </div>
+    </body>
+</html>

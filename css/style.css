@@ -1,0 +1,280 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#todoList {
+    //max-width: 1200px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    background: #32364d;
+}
+
+#inputText {
+    width: auto;
+}
+#inputText #text {
+    width: 31.25rem;
+    margin-bottom: 1.25rem;
+    padding: 0.63rem 0;
+    text-align: center;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+#inputText #add {
+    width: 6.25rem;
+    display: block;
+    margin: 0 auto 1.25rem;
+    padding: 0.313rem 0;
+    border: none;
+    border-radius: 7px;
+}
+
+#lists {
+    width: 40%;
+    height: 70%;
+    padding: 1rem 1rem;
+    border: 0.125rem solid black;
+    border-radius: 10px;
+    overflow-x: hidden;
+}
+#lists::-webkit-scrollbar {
+    width: 0 !important;
+}
+
+.list {
+    max-width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.625rem 1rem;
+    border-radius: 15px;
+    font-size: 1.3rem;
+    color: white;
+    background: #282a36;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+
+input[type="checkbox"] {
+    max-width: 40px;
+    width: 100%;
+    height: 2.5rem;
+    align-self: center;
+}
+
+.text {
+    max-width: calc(100% - 90px);
+    width: 100%;
+    align-self: center;
+    font-size: 1.3rem;
+    color: #fff;
+    word-wrap: break-word;
+}
+
+.removeList {
+    display: inline-block;
+    max-width: 40px;
+    width: 100%;
+}
+.removeList svg {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+@media (max-width: 1440px) {
+    #inputText #text {
+        width: 31.25rem;
+        height: 3rem;
+    }
+    #inputText #add {
+        width: 9.375rem;
+        height: 40px;
+        display: block;
+        margin: 0 auto 1.25rem;
+        padding: 0.313rem 0;
+        font-size: 1.5rem;
+    }
+
+    #lists {
+        width: 70%;
+    }
+
+    .text {
+        max-width: calc(100% - 110px);
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #inputText #text {
+        width: 31.25rem;
+        height: 3rem;
+    }
+    #inputText #add {
+        width: 9.375rem;
+        height: 40px;
+        display: block;
+        margin: 0 auto 1.25rem;
+        padding: 0.313rem 0;
+        font-size: 1.5rem;
+    }
+
+    #lists {
+        width: 70%;
+    }
+}
+
+@media (max-width: 510px) {
+    #inputText #text {
+        width: 30rem;
+        height: 3rem;
+    }
+    #inputText #add {
+        width: 9.375rem;
+        height: 40px;
+        display: block;
+        margin: 0 auto 1.25rem;
+        padding: 0.313rem 0;
+        font-size: 1.5rem;
+    }
+
+    #lists {
+        width: 75%;
+    }
+}
+
+@media (max-width: 360px) {
+    #inputText #text {
+        width: 20rem;
+        height: 3rem;
+    }
+    #inputText #add {
+        width: 7rem;
+        height: 40px;
+        display: block;
+        margin: 0 auto 1.25rem;
+        padding: 0.313rem 0;
+        font-size: 1.5rem;
+    }
+
+    #lists {
+        width: 80%;
+        height: 60%;
+    }
+    input[type="checkbox"] {
+        max-width: 30px;
+    }
+
+    .text {
+        max-width: calc(100% - 75px);
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 340px) {
+    #inputText #text {
+        width: 18rem;
+        height: 3rem;
+    }
+    #inputText #add {
+        width: 7rem;
+        height: 40px;
+        display: block;
+        margin: 0 auto 1.25rem;
+        padding: 0.313rem 0;
+        font-size: 1.5rem;
+    }
+
+    #lists {
+        width: 80%;
+        height: 60%;
+    }
+    input[type="checkbox"] {
+        max-width: 28px;
+    }
+
+    .text {
+        max-width: calc(100% - 65px);
+        font-size: 0.9rem;
+    }
+
+    .removeList {
+        max-width: 30px;
+    }
+}
+
+@media (max-width: 310px) {
+    #inputText #text {
+        width: 16.5rem;
+        height: 3rem;
+    }
+    #inputText #add {
+        width: 6rem;
+        height: 40px;
+        display: block;
+        margin: 0 auto 1.25rem;
+        padding: 0.313rem 0;
+        font-size: 1.5rem;
+    }
+
+    #lists {
+        width: 80%;
+        height: 60%;
+    }
+    input[type="checkbox"] {
+        max-width: 28px;
+    }
+
+    .text {
+        max-width: calc(100% - 65px);
+        font-size: 0.9rem;
+    }
+
+    .removeList {
+        max-width: 30px;
+    }
+}
+
+@media (max-width: 280px) {
+    #inputText #text {
+        width: 14.5rem;
+        height: 3rem;
+    }
+    #inputText #add {
+        width: 6rem;
+        height: 40px;
+        display: block;
+        margin: 0 auto 1.25rem;
+        padding: 0.313rem 0;
+        font-size: 1.5rem;
+    }
+
+    #lists {
+        width: 80%;
+        height: 60%;
+    }
+    input[type="checkbox"] {
+        max-width: 20px;
+    }
+
+    .text {
+        max-width: calc(100% - 60px);
+        font-size: 0.7rem;
+    }
+
+    .removeList {
+        max-width: 30px;
+    }
+}
